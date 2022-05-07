@@ -17,9 +17,9 @@ namespace Manuel_Tartagni
         /// 
         public int GetRandomInt(int min, int max)
         {
-            var mathRandom = new Random().Next(int.MinValue, int.MaxValue);
-            float randomN = mathRandom * (max - min);
-            this.RandomInt2 = (int)Math.Round(randomN) + min;
+            float mathRandom = new Random().Next(int.MinValue, int.MaxValue);
+           // float randomN = mathRandom * (max - min);
+            this.RandomInt2 = (int)Math.Round(mathRandom);  // + min;
             return this.RandomInt2;
         }
 
